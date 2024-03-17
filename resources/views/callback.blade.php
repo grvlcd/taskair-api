@@ -19,8 +19,8 @@
 <body class="font-sans antialiased">
     <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
         <!-- Page Content -->
-        <main>
-            <p>Authorizing...</p>
+        <main class="flex flex-col items-center justify-center">
+            <h1 class="text-black dark:text-white">Authorizing...</h1>
         </main>
     </div>
     <script>
