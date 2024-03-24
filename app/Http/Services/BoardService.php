@@ -13,7 +13,7 @@ class BoardService
     public function getBoards(Request $request)
     {
         $user = $request->user();
-        $sharedBoards = $user->boards;
+        $sharedBoards = $user->boards()->with('users')->get();
         $myBoards = $user->board;
         return [
             "shared" => $sharedBoards,
